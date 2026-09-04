@@ -1,0 +1,6 @@
+{
+  "name": "Ordersphere",
+  "description": "Custom scalable software solutions and digital infrastructure for high-growth e-commerce enterprises and business partners.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
