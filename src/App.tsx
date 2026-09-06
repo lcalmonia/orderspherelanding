@@ -63,7 +63,7 @@ export default function App() {
           onSelectClient={handleSelectClientById}
         />
 
-        {/* Featured Clients Showcase: hydrapure & iluvkeyks */}
+        {/* Featured Clients Showcase: hydra & iluvkeyks */}
         <ClientShowcase
           onOpenLiveModal={handleOpenClientModal}
           onOpenPartnerModal={handleOpenPartnerModal}

@@ -2,105 +2,107 @@ import { ClientProject } from '../types';
 
 export const CLIENT_PROJECTS: ClientProject[] = [
   {
-    id: 'hydrapure',
-    name: 'HydraPure Systems',
-    subdomain: 'hydrapure.ordersphere.app',
-    fullUrl: 'https://hydrapure.ordersphere.app',
-    badge: 'IoT & Bio-Hydration Tech',
-    industry: 'Health, Wellness & Clean Tech',
-    summary: 'Custom high-frequency subscription engine, IoT telemetry filter replenishment, and automated multi-warehouse temperature-monitored distribution.',
-    heroHeadline: 'Automated Mineralized Water Delivery with Intelligent Cartridge Telemetry',
+    id: 'hydra',
+    name: 'Hydra Water Refilling Station',
+    subdomain: 'hydra.ordersphere.app',
+    fullUrl: 'https://hydra.ordersphere.app',
+    badge: 'Water Refilling & Delivery Logistics',
+    industry: 'Water Station Operations, Route Logistics & POS',
+    summary: 'Complete water refilling station operations platform with rider route dispatch, 5-gallon container balance ledger, recurring auto-refill subscriptions, loyalty redemptions, and station POS.',
+    heroHeadline: 'Water Refilling Station Operations, Gallon Ledger & Rider Dispatch',
     stats: [
-      { label: 'Active Subscribers', value: '48,500+', detail: 'Auto-billed & dispatched monthly' },
-      { label: 'Checkout Latency', value: '82ms', detail: 'Edge-rendered global cart checkout' },
-      { label: 'Renewal Retention', value: '94.2%', detail: 'Predictive filter life cycle cadence' },
-      { label: 'Carrier Dispatch', value: '100% Automated', detail: 'Zero-touch API fulfillment routing' }
+      { label: 'Active Delivery Households', value: '4,850+', detail: 'Weekly & bi-weekly automated dispatch' },
+      { label: 'Gallon Containers Tracked', value: '18,400', detail: 'Round & slim 5-gal ledger with deposit sync' },
+      { label: 'Average Dispatch Velocity', value: '< 18 mins', detail: 'Live rider status & localized route batching' },
+      { label: 'Counter POS Reconciliation', value: '100% Synced', detail: 'Daily cash drawer, bottle deposits & refills' }
     ],
-    challenge: 'HydraPure operated on standard off-the-shelf software that failed to handle custom IoT smart-filter usage signals, dynamic scheduled deliveries, and multi-tier B2B corporate office bulk refills.',
-    solution: 'Ordersphere engineered a bespoke headless architecture paired with an IoT webhook consumer that computes individual household mineral cartridge exhaustion in real-time, auto-generating replenishment dispatches before the customer ever runs low.',
+    challenge: 'Hydra struggled with manual paper logbooks, leading to untracked 5-gallon loaner containers, chaotic delivery driver routes, uncollected bottle deposits, and missed recurring household refill schedules.',
+    solution: 'Ordersphere engineered a specialized Water Refilling Station platform featuring real-time rider dispatch (Pending → Accepted → In Transit → Completed), an automated 5-gallon container deposit ledger, recurring delivery subscriptions, and station counter POS reconciliation.',
     techHighlights: [
-      'Smart Usage Telemetry Webhook Ingestion Engine',
-      'Dynamic Automated Reorder Scheduling with 1-Click SMS Rescheduling',
-      'Multi-Warehouse Geo-routing across 6 regional fulfillment hubs',
-      'Wholesale & Corporate Office Portal with Tiered Net-30 Invoicing'
+      'Real-Time Rider Dispatch & Route Status Machine (Pending to Completed)',
+      '5-Gallon Slim & Round Container Balance Ledger with Deposit Accounting',
+      'Automated Refill Cadence Subscriptions with SMS Route Alerts',
+      'Unified Counter POS & End-of-Day Cash Drawer Settlement',
+      'Water Station Filtration & Quality Telemetry (TDS Sensor & UV Sterilization)'
     ],
     colorAccent: {
-      primary: 'from-cyan-500 to-blue-600',
-      glow: 'rgba(6, 182, 212, 0.25)',
-      border: 'border-cyan-500/40',
-      badgeBg: 'bg-cyan-950/80',
-      badgeText: 'text-cyan-300'
+      primary: 'from-blue-500 to-cyan-400',
+      glow: 'rgba(14, 99, 196, 0.25)',
+      border: 'border-blue-500/40',
+      badgeBg: 'bg-blue-950/80',
+      badgeText: 'text-blue-300'
     },
     liveDemoFeatures: [
       {
-        title: 'Smart Cartridge Health Monitor',
-        description: 'Simulates live household filter lifespan and triggers automated replenishment.'
+        title: 'Rider Route Dispatcher',
+        description: 'Simulates dispatching delivery riders and transitioning orders from Pending to Delivered.'
       },
       {
-        title: 'Flexible Cadence Subscription Control',
-        description: 'Allows buyers to pause, swap mineral formulas, or gift shipments in 2 taps.'
+        title: 'Gallon Container Balance Ledger',
+        description: 'Tracks loaned vs returned 5-gallon containers and computes bottle deposits in real time.'
       },
       {
-        title: 'Cold-Chain Delivery Tracker',
-        description: 'End-to-end GPS and temperature logs from regional depot to doorstep.'
+        title: 'Station Filtration Telemetry',
+        description: 'Live sensor monitoring of TDS levels, UV sterilizer status, and daily gallons dispensed.'
       }
     ],
     testimonial: {
-      quote: "Before partnering with Ordersphere, scaling past 5,000 subscribers caused our previous platform to crash every first of the month. Ordersphere custom-built our infrastructure from the ground up. We now handle tens of thousands of automated orders without a single hiccup.",
-      author: 'Dr. Marcus Vance',
-      role: 'Co-Founder & Chief Operations Officer, HydraPure Systems',
+      quote: "Before Ordersphere, we were losing hundreds of 5-gallon water bottles every quarter and delivery riders were crossing paths inefficiently. Ordersphere's water station manager automated our entire route dispatch, container deposits, and daily counter balancing. It completely transformed our business operations.",
+      author: 'Ramon De La Cruz',
+      role: 'Operations Director, Hydra Water Refilling Station',
       avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80'
     }
   },
   {
     id: 'iluvkeyks',
-    name: 'iLuvKeyks Artisanal Patisserie',
-    subdomain: 'iluvkeyks.orderspher.app',
-    fullUrl: 'https://iluvkeyks.orderspher.app',
-    badge: 'Artisan Confections & Custom Bakery',
-    industry: 'Specialty Food, Events & Gourmet Gifts',
-    summary: 'Interactive 3D custom tiered cake customizer, real-time kitchen baking slot reservation, localized cold-courier dispatch, and live bakery counter POS synchronization.',
-    heroHeadline: 'Bespoke Multi-Tier Celebration Cake Architecture & Kitchen Dispatch',
+    name: 'iLuvKeyks Coffee and Tea',
+    subdomain: 'iluvkeyks.ordersphere.app',
+    fullUrl: 'https://iluvkeyks.ordersphere.app',
+    badge: 'Online Ordering, Sales Monitoring & Stock Status Audit',
+    industry: 'Coffee, Tea & Tub Cakes | Cafe & Bakery Operations',
+    summary: 'All-in-one digital ordering and operations platform: customer online ordering with drink & meal customization and delivery logistics, real-time barista sales monitoring & KDS queue, and an owner dashboard to monitor daily staff inventory counts and low/critical stock levels.',
+    heroHeadline: 'Online Ordering App, Real-Time Sales Monitoring & Owner Stock Audit',
     stats: [
-      { label: 'Custom Cake Orders', value: '18,200+', detail: 'Unique layer, flavor & piping orders' },
-      { label: 'Production Capacity', value: '100% Synced', detail: 'Zero overbooking of kitchen oven slots' },
-      { label: 'Mobile Conversion', value: '+52%', detail: 'Interactive touch-first 3D cake architect' },
-      { label: 'In-Store POS Sync', value: 'Sub-second', detail: 'Unified ingredient & pastry stock balance' }
+      { label: 'Monthly Orders Placed', value: '24,600+', detail: 'Coffee, tea, tub cakes & rice meals' },
+      { label: 'Sales Monitoring Sync', value: 'Real-Time', detail: 'Live barista KDS & revenue analytics' },
+      { label: 'Staff Audit Accuracy', value: '100%', detail: 'Daily shift counts & critical stock alerts' },
+      { label: 'Online Order Growth', value: '+68%', detail: 'Direct delivery with ₱49 flat / free >₱500' }
     ],
-    challenge: 'Custom artisanal cakes require precise scheduling: maximum 12 wedding cakes per day, custom ingredient lead times (48-72h), and real-time validation of delivery distance to ensure fragile tiers do not melt in transit.',
-    solution: 'Ordersphere designed a specialized visual cake builder coupled with an intelligent Kitchen Display System (KDS) and strict delivery radius geo-fence. Kitchen staff receive automated production manifests with exact assembly diagrams and pickup windows.',
+    challenge: 'Managing busy cafe walk-ins while handling online orders caused staff friction and drink delays, while the owner lacked visibility over daily staff physical inventory counts—resulting in surprise low-stock and critical stockouts during peak shifts.',
+    solution: 'Ordersphere engineered a unified solution for iLuvKeyks: a customer online ordering portal with flexible drink/food modifiers, a real-time sales monitoring dashboard with live barista KDS tickets, and an owner inventory module where staff submit daily shift counts, instantly alerting the owner when supplies reach low or critical thresholds.',
     techHighlights: [
-      'Interactive Multi-Tier Cake Builder with Instant Dynamic Pricing',
-      'Oven-Capacity Slot Reservation Engine (Anti-Overbooking Algorithm)',
-      'Precision Geo-Radius Delivery Dispatch with Fragile Goods Handling',
-      'Dual-Way In-Store POS & Kitchen Display System (KDS) Synchronization'
+      'Customer Online Ordering Portal with Pickup & Doorstep Delivery',
+      'Rich Modifier Matrix (Temperature, Sweetness, Ice, Milk Alternatives, Add-ons)',
+      'Real-Time Sales Monitoring, Revenue Analytics & Live Barista Order KDS',
+      'Owner Stock Audit Dashboard: Daily Staff Shift Counts & Low/Critical Warning Engine',
+      'Role-Based Staff Access (Store Owner, Operations Manager, Shift Lead Barista)'
     ],
     colorAccent: {
-      primary: 'from-amber-400 to-rose-500',
-      glow: 'rgba(244, 63, 94, 0.25)',
-      border: 'border-rose-500/40',
-      badgeBg: 'bg-rose-950/80',
-      badgeText: 'text-rose-300'
+      primary: 'from-amber-500 to-orange-500',
+      glow: 'rgba(245, 158, 11, 0.25)',
+      border: 'border-amber-500/40',
+      badgeBg: 'bg-amber-950/80',
+      badgeText: 'text-amber-300'
     },
     liveDemoFeatures: [
       {
-        title: 'Interactive Layer & Flavor Builder',
-        description: 'Choose chiffon sponge, ganache fillings, exterior frosting finish, and bespoke toppers.'
+        title: 'Online Ordering & Modifiers',
+        description: 'Configure drink temperatures, sweetness levels, ice, alternative milks, and signature tub cakes.'
       },
       {
-        title: 'Baking Slot Calendar Engine',
-        description: 'Real-time kitchen capacity heat map that reserves oven time and guarantees freshness.'
+        title: 'Real-Time Sales Monitoring',
+        description: 'Track live orders, barista prep statuses, average order value, and daily gross revenue.'
       },
       {
-        title: 'Specialty Fragile Courier Routing',
-        description: 'Automated dispatching to vetted climate-controlled courier partners.'
+        title: 'Owner Daily Stock Monitor',
+        description: 'Audit daily staff physical counts and proactively track items flagged as Normal, Low, or Critical.'
       }
     ],
     testimonial: {
-      quote: "Our bakers used to spend four hours every morning responding to Instagram DMs and manually checking calendar slots. Ordersphere transformed iLuvKeyks into an effortless, scalable online bakery powerhouse. Our revenue tripled in 6 months.",
-      author: 'Elena Rostova',
-      role: 'Master Pastry Chef & Founder, iLuvKeyks Studio',
-      avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80'
+      quote: "Ordersphere gave iLuvKeyks the exact operational clarity we needed: customers order their favorite coffee, tea, tub cakes, and rice meals online with tailored sweetness and ice, while I as the owner can monitor live sales and review daily staff inventory counts at a glance. Seeing low and critical stock warnings ahead of time eliminated surprise stockouts completely.",
+      author: 'Store Owner & Operations Team',
+      role: 'iLuvKeyks Coffee and Tea',
+      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80'
     }
   }
 ];
@@ -210,7 +212,7 @@ export const FAQ_ITEMS = [
   },
   {
     q: 'Can we use our own custom domain like mybrand.com instead of .ordersphere.app?',
-    a: 'Absolutely! While every client receives a dedicated cloud tenant on our secure network (like hydrapure.ordersphere.app or iluvkeyks.orderspher.app), you can easily attach your primary domain (e.g., yourbrand.com) with automated SSL provisioning, DNS routing, and global edge acceleration.'
+    a: 'Absolutely! While every client receives a dedicated cloud tenant on our secure network (like hydra.ordersphere.app or iluvkeyks.ordersphere.app), you can easily attach your primary domain (e.g., yourbrand.com) with automated SSL provisioning, DNS routing, and global edge acceleration.'
   },
   {
     q: 'We are currently a physical retail store with no online presence. How quickly can we launch?',

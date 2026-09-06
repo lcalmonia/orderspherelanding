@@ -335,7 +335,7 @@ export const PartnerInquiryForm: React.FC<PartnerInquiryFormProps> = ({
             </div>
             <div className="flex items-start gap-2.5 text-slate-300">
               <Calendar className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
-              <span>Direct calendar invite will include live demo sandboxes of <strong className="text-white">hydrapure.ordersphere.app</strong> and <strong className="text-white">iluvkeyks.orderspher.app</strong>.</span>
+              <span>Direct calendar invite will include live demo sandboxes of <strong className="text-white">hydra.ordersphere.app</strong> and <strong className="text-white">iluvkeyks.ordersphere.app</strong>.</span>
             </div>
           </div>
 

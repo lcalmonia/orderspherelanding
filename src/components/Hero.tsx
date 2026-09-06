@@ -28,7 +28,7 @@ export const Hero: React.FC<HeroProps> = ({
   // Simulated real-time metrics for interactive tech aura
   const [pulseTime, setPulseTime] = useState(84);
   const [activeTransactions, setActiveTransactions] = useState(1482);
-  const [activeTab, setActiveTab] = useState<'hydrapure' | 'iluvkeyks'>('hydrapure');
+  const [activeTab, setActiveTab] = useState<'hydra' | 'iluvkeyks'>('hydra');
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -170,19 +170,19 @@ export const Hero: React.FC<HeroProps> = ({
 
                 <div className="grid grid-cols-2 gap-2 p-1 bg-[#020408] rounded-xl border border-white/5">
                   <button
-                    id="hero-tab-hydrapure"
-                    onClick={() => setActiveTab('hydrapure')}
+                    id="hero-tab-hydra"
+                    onClick={() => setActiveTab('hydra')}
                     className={`py-2 px-3 rounded-lg text-xs font-semibold transition-all text-left flex items-center justify-between ${
-                      activeTab === 'hydrapure'
+                      activeTab === 'hydra'
                         ? 'bg-blue-950/50 border border-blue-500/40 text-blue-300 shadow'
                         : 'text-slate-400 hover:text-white'
                     }`}
                   >
                     <div>
-                      <div className="font-bold">HydraPure</div>
-                      <div className="text-[10px] text-slate-400 font-mono truncate">hydrapure.ordersphere.app</div>
+                      <div className="font-bold">Hydra Station</div>
+                      <div className="text-[10px] text-slate-400 font-mono truncate">hydra.ordersphere.app</div>
                     </div>
-                    {activeTab === 'hydrapure' && <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>}
+                    {activeTab === 'hydra' && <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>}
                   </button>
 
                   <button
@@ -190,58 +190,79 @@ export const Hero: React.FC<HeroProps> = ({
                     onClick={() => setActiveTab('iluvkeyks')}
                     className={`py-2 px-3 rounded-lg text-xs font-semibold transition-all text-left flex items-center justify-between ${
                       activeTab === 'iluvkeyks'
-                        ? 'bg-pink-950/40 border border-pink-500/40 text-pink-300 shadow'
+                        ? 'bg-amber-950/40 border border-amber-500/40 text-amber-300 shadow'
                         : 'text-slate-400 hover:text-white'
                     }`}
                   >
                     <div>
-                      <div className="font-bold">iLuvKeyks</div>
-                      <div className="text-[10px] text-slate-400 font-mono truncate">iluvkeyks.orderspher.app</div>
+                      <div className="font-bold">iLuvKeyks Coffee & Tea</div>
+                      <div className="text-[10px] text-slate-400 font-mono truncate">iluvkeyks.ordersphere.app</div>
                     </div>
-                    {activeTab === 'iluvkeyks' && <span className="w-2 h-2 rounded-full bg-pink-400 animate-pulse"></span>}
+                    {activeTab === 'iluvkeyks' && <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>}
                   </button>
                 </div>
 
                 {/* Tenant Detail Preview Card */}
-                {activeTab === 'hydrapure' ? (
+                {activeTab === 'hydra' ? (
                   <div className="p-4 rounded-2xl bg-[#020408]/90 border border-white/10 space-y-3.5">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 rounded-full bg-emerald-400"></div>
-                        <span className="text-xs font-mono font-bold text-white">hydrapure.ordersphere.app</span>
+                        <div className="w-2 h-2 rounded-full bg-blue-400"></div>
+                        <span className="text-xs font-mono font-bold text-white">hydra.ordersphere.app</span>
                       </div>
-                      <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                        IoT Health & Bio-Water
+                      <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                        Station Operations • Gallon Ledger • Rider Dispatch
                       </span>
                     </div>
 
                     <div className="space-y-1">
-                      <h4 className="text-sm font-semibold text-white">Smart Hydration & Auto-Replenishment</h4>
+                      <div className="flex items-center gap-2">
+                        <h4 className="text-sm font-semibold text-white">Hydra Pure Water Logistics</h4>
+                        <span className="text-[10px] font-mono text-blue-400 bg-blue-950/60 px-1.5 py-0.5 rounded border border-blue-500/20">
+                          Water Refill OS
+                        </span>
+                      </div>
                       <p className="text-xs text-slate-400 leading-relaxed">
-                        Custom subscription engine reading IoT cartridge exhaust signals to trigger automated dispatch before household filters deplete.
+                        End-to-end station management: 5-gallon loaned bottle tracking across 4,850+ homes, automated weekly refill cadences, and real-time rider GPS routing.
                       </p>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-2 text-xs">
-                      <div className="bg-white/[0.02] p-2.5 rounded-xl border border-white/5">
-                        <div className="text-[10px] text-slate-400">Active Subscribers</div>
-                        <div className="text-sm font-bold text-white font-mono">48,500+</div>
+                    <div className="grid grid-cols-3 gap-2 text-xs">
+                      <div className="bg-white/[0.02] p-2 rounded-xl border border-white/5">
+                        <div className="text-[9px] text-blue-400 uppercase font-semibold">Gallon Ledger</div>
+                        <div className="text-xs font-bold text-white font-mono mt-0.5">18,400 Bottles</div>
+                        <div className="text-[9px] text-slate-400">Zero Lost Assets</div>
                       </div>
-                      <div className="bg-white/[0.02] p-2.5 rounded-xl border border-white/5">
-                        <div className="text-[10px] text-slate-400">Monthly Auto-Orders</div>
-                        <div className="text-sm font-bold text-blue-400 font-mono">99.98% Zero-Fail</div>
+                      <div className="bg-white/[0.02] p-2 rounded-xl border border-white/5">
+                        <div className="text-[9px] text-emerald-400 uppercase font-semibold">Rider Dispatch</div>
+                        <div className="text-xs font-bold text-emerald-400 font-mono mt-0.5">3 Active Fleets</div>
+                        <div className="text-[9px] text-slate-400">Smart Route Clustered</div>
+                      </div>
+                      <div className="bg-white/[0.02] p-2 rounded-xl border border-white/5">
+                        <div className="text-[9px] text-cyan-400 uppercase font-semibold">Water Purity</div>
+                        <div className="text-xs font-bold text-cyan-400 font-mono mt-0.5">12 ppm TDS</div>
+                        <div className="text-[9px] text-slate-400">Station Sensor Monitored</div>
                       </div>
                     </div>
 
-                    <div className="pt-2 flex items-center justify-between">
+                    {/* Live Status Stream */}
+                    <div className="px-2.5 py-1.5 rounded-lg bg-blue-950/30 border border-blue-500/20 flex items-center justify-between text-[11px] font-mono">
+                      <span className="text-slate-300 flex items-center gap-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-ping"></span>
+                        Queue: 14 Refills Pending
+                      </span>
+                      <span className="text-blue-400">99.8% On-Time Delivery</span>
+                    </div>
+
+                    <div className="pt-1 flex items-center justify-between">
                       <button
-                        onClick={() => onSelectClient('hydrapure')}
-                        className="text-xs font-semibold text-blue-400 hover:text-blue-300 inline-flex items-center gap-1 transition-colors"
+                        onClick={() => onSelectClient('hydra')}
+                        className="text-xs font-semibold text-blue-400 hover:text-blue-300 inline-flex items-center gap-1 transition-colors cursor-pointer"
                       >
-                        Launch Interactive Case Study &rarr;
+                        Launch Interactive Sandbox &rarr;
                       </button>
                       <a
-                        href="https://hydrapure.ordersphere.app"
+                        href="https://hydra.ordersphere.app"
                         target="_blank"
                         rel="noreferrer"
                         className="text-[11px] text-slate-400 hover:text-white inline-flex items-center gap-1 font-mono"
@@ -254,41 +275,63 @@ export const Hero: React.FC<HeroProps> = ({
                   <div className="p-4 rounded-2xl bg-[#020408]/90 border border-white/10 space-y-3.5">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 rounded-full bg-pink-400"></div>
-                        <span className="text-xs font-mono font-bold text-white">iluvkeyks.orderspher.app</span>
+                        <div className="w-2 h-2 rounded-full bg-amber-400"></div>
+                        <span className="text-xs font-mono font-bold text-white">iluvkeyks.ordersphere.app</span>
                       </div>
-                      <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-pink-500/10 text-pink-400 border border-pink-500/20">
-                        Custom Bakery & Patisserie
+                      <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">
+                        Online Ordering • Sales Monitoring • Owner Stock Audit
                       </span>
                     </div>
 
                     <div className="space-y-1">
-                      <h4 className="text-sm font-semibold text-white">Bespoke 3D Cake Architect & KDS Dispatch</h4>
+                      <div className="flex items-center gap-2">
+                        <h4 className="text-sm font-semibold text-white">iLuvKeyks Coffee, Tea & Tub Cakes</h4>
+                        <span className="text-[10px] font-mono text-amber-400/90 bg-amber-950/50 px-1.5 py-0.5 rounded border border-amber-500/20">
+                          Cafe & Bakery OS
+                        </span>
+                      </div>
                       <p className="text-xs text-slate-400 leading-relaxed">
-                        Live tier builder with flavor pairing, strict anti-overbooking oven slot scheduler, and temperature-controlled courier routing.
+                        Full-stack cafe operations: customer ordering with temperature, sweetness & milk modifiers, real-time barista KDS revenue tracker, and owner oversight to audit daily staff inventory counts & low/critical stock levels.
                       </p>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-2 text-xs">
-                      <div className="bg-white/[0.02] p-2.5 rounded-xl border border-white/5">
-                        <div className="text-[10px] text-slate-400">Custom Cakes Built</div>
-                        <div className="text-sm font-bold text-white font-mono">18,200+</div>
+                    {/* Three Core Pillars: Online Ordering, Sales Monitoring, Owner Stock Audit */}
+                    <div className="grid grid-cols-3 gap-2 text-xs">
+                      <div className="bg-white/[0.02] p-2 rounded-xl border border-white/5">
+                        <div className="text-[9px] text-amber-300/80 uppercase font-semibold">Online Ordering</div>
+                        <div className="text-xs font-bold text-white font-mono mt-0.5">₱49 / Free &gt;₱500</div>
+                        <div className="text-[9px] text-slate-400">Custom Modifiers</div>
                       </div>
-                      <div className="bg-white/[0.02] p-2.5 rounded-xl border border-white/5">
-                        <div className="text-[10px] text-slate-400">Kitchen Slot Sync</div>
-                        <div className="text-sm font-bold text-pink-400 font-mono">Zero Overbooking</div>
+                      <div className="bg-white/[0.02] p-2 rounded-xl border border-white/5">
+                        <div className="text-[9px] text-emerald-400 uppercase font-semibold">Sales Monitor</div>
+                        <div className="text-xs font-bold text-emerald-400 font-mono mt-0.5">Live Barista KDS</div>
+                        <div className="text-[9px] text-slate-400">Revenue & Speed</div>
                       </div>
+                      <div className="bg-white/[0.02] p-2 rounded-xl border border-white/5">
+                        <div className="text-[9px] text-cyan-400 uppercase font-semibold">Owner Stock Audit</div>
+                        <div className="text-xs font-bold text-cyan-400 font-mono mt-0.5">Daily Staff Counts</div>
+                        <div className="text-[9px] text-slate-400">Low & Critical Alerts</div>
+                      </div>
+                    </div>
+
+                    {/* Live Status Stream */}
+                    <div className="px-2.5 py-1.5 rounded-lg bg-amber-950/30 border border-amber-500/20 flex items-center justify-between text-[11px] font-mono">
+                      <span className="text-slate-300 flex items-center gap-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping"></span>
+                        Barista KDS: Order #IK-842 Prepping
+                      </span>
+                      <span className="text-amber-400 font-semibold">Owner Alert: 2 Items Low/Critical</span>
                     </div>
 
                     <div className="pt-2 flex items-center justify-between">
                       <button
                         onClick={() => onSelectClient('iluvkeyks')}
-                        className="text-xs font-semibold text-pink-400 hover:text-pink-300 inline-flex items-center gap-1 transition-colors"
+                        className="text-xs font-semibold text-amber-400 hover:text-amber-300 inline-flex items-center gap-1 transition-colors cursor-pointer"
                       >
-                        Launch Interactive Case Study &rarr;
+                        Launch Interactive Sandbox &rarr;
                       </button>
                       <a
-                        href="https://iluvkeyks.orderspher.app"
+                        href="https://iluvkeyks.ordersphere.app"
                         target="_blank"
                         rel="noreferrer"
                         className="text-[11px] text-slate-400 hover:text-white inline-flex items-center gap-1 font-mono"
@@ -322,12 +365,12 @@ export const Hero: React.FC<HeroProps> = ({
             </div>
             <div className="flex flex-wrap gap-8 sm:gap-16 items-center justify-center">
               <button 
-                onClick={() => onSelectClient('hydrapure')}
+                onClick={() => onSelectClient('hydra')}
                 className="flex items-center gap-3 opacity-90 hover:opacity-100 transition-opacity cursor-pointer group"
               >
-                <div className="w-6 h-6 bg-emerald-500 rounded-md group-hover:scale-105 transition-transform shadow-md shadow-emerald-500/20"></div>
+                <div className="w-6 h-6 bg-blue-500 rounded-md group-hover:scale-105 transition-transform shadow-md shadow-blue-500/20"></div>
                 <span className="text-base sm:text-lg font-bold text-white">
-                  hydrapure<span className="text-slate-500 font-normal">.ordersphere.app</span>
+                  hydra<span className="text-slate-500 font-normal">.ordersphere.app</span>
                 </span>
               </button>
               <button 

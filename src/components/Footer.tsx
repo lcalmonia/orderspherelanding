@@ -78,19 +78,19 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPartnerModal }) => {
             <ul className="space-y-2.5">
               <li>
                 <a 
-                  href="https://hydrapure.ordersphere.app" 
+                  href="https://hydra.ordersphere.app" 
                   target="_blank" 
                   rel="noreferrer"
                   className="hover:text-white flex items-center gap-1.5 transition-colors group"
                 >
-                  <span>HydraPure</span>
+                  <span>Hydra Water Station</span>
                   <ExternalLink className="w-3 h-3 text-slate-500 group-hover:text-blue-400" />
                 </a>
-                <span className="text-[10px] text-slate-500 font-mono block">hydrapure.ordersphere.app</span>
+                <span className="text-[10px] text-slate-500 font-mono block">hydra.ordersphere.app</span>
               </li>
               <li>
                 <a 
-                  href="https://iluvkeyks.orderspher.app" 
+                  href="https://iluvkeyks.ordersphere.app" 
                   target="_blank" 
                   rel="noreferrer"
                   className="hover:text-white flex items-center gap-1.5 transition-colors group"
@@ -98,7 +98,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPartnerModal }) => {
                   <span>iLuvKeyks</span>
                   <ExternalLink className="w-3 h-3 text-slate-500 group-hover:text-pink-400" />
                 </a>
-                <span className="text-[10px] text-slate-500 font-mono block">iluvkeyks.orderspher.app</span>
+                <span className="text-[10px] text-slate-500 font-mono block">iluvkeyks.ordersphere.app</span>
               </li>
             </ul>
           </div>
